@@ -1,0 +1,39 @@
+Algoritmo "Sequencia de Fibonacci"
+// Descrição   : Calculo de sequencia de Fibonacci!
+// Autor(a)    : Celso Jr.
+// Data atual  : 02/03/2021
+
+Var
+// Seção de Declarações das variáveis 
+SeqFib: vetor [0..20] de inteiro
+contador :inteiro
+indice : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+indice <- 2
+
+SeqFib[0] <- 0
+SeqFib[1] <- 1
+
+
+// Contador para calcular a sequencia Fibonacci
+para contador de 1 ate 19 faca
+
+     SeqFib[indice] <- SeqFib[indice-1] + SeqFib[indice-2]
+     indice <- indice + 1
+
+fimpara
+
+// Reiniciando o indice
+ indice <- 0
+ 
+// Contador para Imprimir na tela
+para contador de 1 ate 19 faca
+
+     escreva (SeqFib[indice])
+     indice <- indice + 1
+     
+fimpara
+
+Fimalgoritmo
