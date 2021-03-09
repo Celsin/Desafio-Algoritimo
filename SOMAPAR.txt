@@ -1,0 +1,49 @@
+Algoritmo "SomaPar"
+// Descrição   : Somar de numero PAR da sequencia!
+// Autor(a)    : Celso Jr.
+// Data atual  : 02/03/2021
+
+
+Var
+// Seção de Declarações das variáveis 
+SeqNumeros: vetor [0..10] de inteiro
+indice: inteiro
+contador: inteiro
+NumerosPares: vetor [0..10] de inteiro
+ResultadoPares: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+indice <- 0
+
+// preenchendo a sequencia de numeros e separando e somando os numeros pares
+para contador de 0 ate 10 faca
+
+     escreva ("Digite um numero inteiro para sequencia")
+     leia (SeqNumeros[indice])
+
+     se  SeqNumeros[indice] mod 2 = 0 ENTAO
+
+         NumerosPares[indice] <- SeqNumeros[indice]
+         ResultadoPares <- ResultadoPares +  NumerosPares [indice]
+         
+     fimse
+
+     indice <- indice + 1
+
+fimpara
+
+// zerando o indice controlador
+indice <- 0
+
+//Imprimindo Todos os numeros
+para contador de 0 ate 10 faca
+        escreval (" ",SeqNumeros[indice])
+        indice <- indice + 1
+fimpara
+
+escreva (" O valor da soma da sequencia de numeros pares é  ",  ResultadoPares)
+
+
+
+Fimalgoritmo

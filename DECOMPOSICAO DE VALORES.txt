@@ -1,0 +1,66 @@
+Algoritmo "DECOMPOSICAODEVALORES"
+// Descrição   : Somar de numero PAR da sequencia!
+// Autor(a)    : Celso Jr.
+// Data atual  : 02/03/2021
+
+Var
+
+troco, sobra, cem, cinquenta, vinte, dez, cinco, dois, um: inteiro
+
+Inicio
+
+
+escreva ("Digite um valor inteiro R$: ")
+leia (troco)
+
+// Laço de repetição até que o valor seja todo decomposto
+ENQUANTO troco > 0 FACA
+
+   // Controle e somatização de quantas notas vamos precisar
+   ENQUANTO troco >= 100 FACA
+     cem <- cem + 1
+     troco <- troco - 100
+   FIMENQUANTO
+   
+   ENQUANTO troco >= 50 FACA
+     cinquenta <- cinquenta + 1
+     troco <- troco - 50
+   FIMENQUANTO
+   
+   ENQUANTO troco >= 20 FACA
+     vinte <- vinte + 1
+     troco <- troco - 20
+   FIMENQUANTO
+   
+   ENQUANTO troco >= 10 FACA
+     dez <- dez + 1
+     troco <- troco - 10
+   FIMENQUANTO
+   
+   ENQUANTO troco >= 5 FACA
+     cinco <- cinco + 1
+     troco <- troco - 5
+   FIMENQUANTO
+   
+   ENQUANTO troco >= 2 FACA
+     dois <- dois + 1
+     troco <- troco - 2
+   FIMENQUANTO
+   
+   ENQUANTO troco >= 1 FACA
+     um <- um + 1
+     troco <- troco - 1
+   FIMENQUANTO
+   
+
+FIMENQUANTO
+
+// Imprimindo o resultado
+escreval ("Quandidade de notas de 100 é :", cem)
+escreval ("Quandidade de notas de 50 é :", cinquenta)
+escreval ("Quandidade de notas de 20 é :", vinte)
+escreval ("Quandidade de notas de 10 é :", dez)
+escreval ("Quandidade de notas de 5 é :", cinco)
+escreval ("Quandidade de notas de 2 é :", dois)
+escreval ("Quandidade de notas de 1 é :", um)
+Fimalgoritmo
